@@ -4,6 +4,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 import sockets.operation.dto.MensajeSecretoDTO;
 import sockets.operation.dto.RespuestaCoronelDTO;
@@ -31,21 +33,21 @@ public class ComandoTerminalCliente {
 			List<MensajeSecretoDTO> lst = new ArrayList<>();
 			
 			MensajeSecretoDTO mensaje1 = new MensajeSecretoDTO();
-			mensaje.setIdSoldado("Delta1");
-			mensaje.setMensaje("LTN54.454.545");
-			mensaje.setCoordenadas("Objetivo en la mira");
+			mensaje1.setIdSoldado("Delta1");
+			mensaje1.setMensaje("LTN54.454.545");
+			mensaje1.setCoordenadas("Objetivo en la mira");
 			lst.add(mensaje1);
 			
 			MensajeSecretoDTO mensaje2 = new MensajeSecretoDTO();
-			mensaje.setIdSoldado("Delta2");
-			mensaje.setMensaje("LTN54.454.545");
-			mensaje.setCoordenadas("Necesito Apoyo");
+			mensaje2.setIdSoldado("Delta2");
+			mensaje2.setMensaje("LTN54.454.545");
+			mensaje2.setCoordenadas("Necesito Apoyo");
 			lst.add(mensaje2);
 			
 			MensajeSecretoDTO mensaje3 = new MensajeSecretoDTO();
-			mensaje.setIdSoldado("Delta3");
-			mensaje.setMensaje("LTN54.454.545");
-			mensaje.setCoordenadas("Soldado Caido!");
+			mensaje3.setIdSoldado("Delta3");
+			mensaje3.setMensaje("LTN54.454.545");
+			mensaje3.setCoordenadas("Soldado Caido!");
 			lst.add(mensaje3);
 			
 			//Enviar mensajes
